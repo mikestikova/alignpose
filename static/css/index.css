@@ -27,6 +27,17 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+.teaser-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.teaser-table td {
+  width: 49%;
+  vertical-align: top;
+  padding: 10px;
+}
+
 
 .publication-title {
 }
@@ -154,4 +165,47 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+/* Main grid */
+.table {
+  display: grid;
+  grid-template-columns: auto repeat(3, 1fr);
+  gap: 25px 20px; /* row gap | column gap */
+  align-items: center;
+}
+
+/* Column headers */
+.col-header {
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Empty top-left cell */
+.corner {
+  width: 40px;
+}
+
+/* Row headers (vertical text) */
+.row-header {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Images */
+.table img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.square {
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* square aspect ratio ensures same height */
+  object-fit: cover;     /* crops instead of stretching */
+  display: block;
+  background: #d2d1d1;
 }
