@@ -153,36 +153,6 @@
       </div>
     </section>
 
-    <section class="hero teaser">
-      <div class="container is-max-desktop">
-        <table class="teaser-table">
-          <tr>
-            <td>
-              <img
-                src="static/images/input_poses.png"
-                alt="Teaser input poses"
-                class="square"
-              />
-            </td>
-            <td>
-              <img
-                src="static/images/refined_poses.png"
-                alt="Teaser refined poses"
-                class="square"
-              />
-            </td>
-          </tr>
-        </table>
-        <h2 class="subtitle">
-          Using multiple images of a scene, known camera poses, and object 3D
-          models, our approach refines noisy 6D object pose estimates
-          (<b>left</b>) and generates accurate 6D object poses (<b>right</b>).
-          Ground truth is shown using textured models, 6D pose estimates are
-          shown using blue meshes.
-        </h2>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container is-max-desktop">
         <!-- Abstract. -->
@@ -220,28 +190,30 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Approach Overview</h2>
-            <div class="content has-text-justified">
-              <div class="content">
-                <img
-                  src="static/images/approach_overview.png"
-                  alt="Approach overview."
-                />
-                <p>
-                  <b>AlignPose overview.</b> Single-view pose candidates are
-                  first generated independently for each view using
-                  state-of-the-art pose estimation methods. During aggregation,
-                  candidates are transformed into a common coordinate frame, and
-                  non-maximum suppression (NMS) is applied to eliminate
-                  redundant detections of the same object. These filtered pose
-                  candidates ${T}_{WO}$ are then refined using a new multi-view
-                  feature-metric refinement to obtain object poses that are
-                  consistent from all views.
-                </p>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Approach Overview</h2>
+              <div class="content has-text-justified">
+                <div class="content">
+                  <img
+                    src="static/images/approach_overview.png"
+                    alt="Approach overview."
+                  />
+                  <p>
+                    <b>AlignPose overview.</b> Single-view pose candidates are
+                    first generated independently for each view using
+                    state-of-the-art pose estimation methods. During
+                    aggregation, candidates are transformed into a common
+                    coordinate frame, and non-maximum suppression (NMS) is
+                    applied to eliminate redundant detections of the same
+                    object. These filtered pose candidates ${T}_{WO}$ are then
+                    refined using a new multi-view feature-metric refinement to
+                    obtain object poses that are consistent from all views.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -307,9 +279,10 @@
                 FRONTIER (No. 101097822), and ELLIOT (No. 101214398). It was
                 further supported by the Grant Agency of the Czech Technical
                 University in Prague (SGS25/152/OHK3/3T/13). Compute resources
-                were supported by the Ministry of Education, Youth and Sports of
-                the Czech Republic through the e-INFRA CZ (ID:90254) and by the
-                European Union’s Horizon Europe project CLARA (No. 101136607).
+                and infrastructure were supported by the Ministry of Education,
+                Youth and Sports of the Czech Republic through the e-INFRA CZ
+                (ID:90254) and by the European Union’s Horizon Europe project
+                CLARA (No. 101136607).
               </p>
             </div>
           </div>

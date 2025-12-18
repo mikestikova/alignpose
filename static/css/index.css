@@ -201,11 +201,3 @@ body {
   border-radius: 8px;
   display: block;
 }
-
-.square {
-  width: 100%;
-  aspect-ratio: 1 / 1;   /* square aspect ratio ensures same height */
-  object-fit: cover;     /* crops instead of stretching */
-  display: block;
-  background: #d2d1d1;
-}
