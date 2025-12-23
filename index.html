@@ -145,7 +145,49 @@
                       <span>arXiv</span>
                     </a>
                   </span>
+                  <span class="link-block">
+                    <a
+                      class="external-link button is-normal is-rounded is-warning is-light is-static"
+                      aria-disabled="true"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code (coming soon)</span>
+                    </a>
+                  </span>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <div class="columns is-centered has-text-centered">
+            <div class="content has-text-justified">
+              <div class="content">
+                <img
+                  src="static/images/approach_overview.png"
+                  alt="Approach overview."
+                />
+                <p>
+                  AlignPose is a multi-view 6D object pose estimation method. It
+                  accepts a set of RGB images captured from multiple viewpoints
+                  with known camera poses and a set of 3D object models as
+                  input. Its primary goal is to estimate the 6D poses of all
+                  object instances within the scene. The approach consists of
+                  three steps: first, it extracts single-view pose candidates
+                  from all viewpoints using a single-view estimator. These
+                  candidates are then aggregated into a common coordinate
+                  system, where non-maximum suppression (NMS) removes
+                  redundancies. Finally, a novel multi-view feature-metric
+                  refinement is applied to ensure the resulting poses are
+                  consistent across all views.
+                </p>
               </div>
             </div>
           </div>
@@ -187,37 +229,6 @@
           </div>
         </div>
         <!--/ Abstract. -->
-      </div>
-    </section>
-
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <h2 class="title is-3">Approach Overview</h2>
-              <div class="content has-text-justified">
-                <div class="content">
-                  <img
-                    src="static/images/approach_overview.png"
-                    alt="Approach overview."
-                  />
-                  <p>
-                    <b>AlignPose overview.</b> Single-view pose candidates are
-                    first generated independently for each view using
-                    state-of-the-art pose estimation methods. During
-                    aggregation, candidates are transformed into a common
-                    coordinate frame, and non-maximum suppression (NMS) is
-                    applied to eliminate redundant detections of the same
-                    object. These filtered pose candidates ${T}_{WO}$ are then
-                    refined using a new multi-view feature-metric refinement to
-                    obtain object poses that are consistent from all views.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
